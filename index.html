@@ -49,46 +49,259 @@
             <div class="col-md-9">
                 <h1>Character Name</h1>
                 <p>Level 1 Race Class</p>
-                <div class="accordion" id="characterInfo">
+                <div class="accordion accordion-flush" id="characterInfo">
+
+                    <!-- Abilities and modifiers-->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingOne">
+                        <h2 class="accordion-header" id="headingAbilities">
                             <button class="accordion-button" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
-                                Accordion Item #1
+                                data-bs-target="#collapseAbilities" aria-expanded="true"
+                                aria-controls="collapseAbilities">
+                                Abilities
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne"
-                            data-bs-parent="#characterInfo">
+                        <div id="collapseAbilities" class="accordion-collapse collapse show"
+                            aria-labelledby="headingAbilities" data-bs-parent="#characterInfo">
                             <div class="accordion-body">
-                                <strong>This is the first item's accordion body.</strong> It is hidden by default, until
-                                the collapse plugin adds the appropriate classes that we use to style each element.
-                                These classes control the overall appearance, as well as the showing and hiding via CSS
-                                transitions. You can modify any of this with custom CSS or overriding our default
-                                variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
-                            </div>
-                        </div>
-                    </div>
-                    <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                                Accordion Item #2
-                            </button>
-                        </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                            data-bs-parent="#characterInfo">
-                            <div class="accordion-body">
-                                <strong>This is the second item's accordion body.</strong> It is hidden by default,
-                                until the collapse plugin adds the appropriate classes that we use to style each
-                                element. These classes control the overall appearance, as well as the showing and hiding
-                                via CSS transitions. You can modify any of this with custom CSS or overriding our
-                                default variables. It's also worth noting that just about any HTML can go within the
-                                <code>.accordion-body</code>, though the transition does limit overflow.
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Ability</th>
+                                            <th>Score</th>
+                                            <th>Modifier</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+
+                                        <tr>
+                                            <td>CHA</td>
+                                            <td>10</td>
+                                            <td>+0</td>
+                                            <td>
+                                                <button class="btn btn-primary">Roll check</button>
+                                            </td>
+
+                                        </tr>
+                                        <td>CON</td>
+                                        <td>10</td>
+                                        <td>+0</td>
+                                        <td>
+                                            <button class="btn btn-primary">Roll check</button>
+                                        </td>
+
+                                        </tr>
+                                        <td>DEX</td>
+                                        <td>10</td>
+                                        <td>+0</td>
+                                        <td>
+                                            <button class="btn btn-primary">Roll check</button>
+                                        </td>
+
+                                        </tr>
+                                        <td>INT</td>
+                                        <td>10</td>
+                                        <td>+0</td>
+                                        <td>
+                                            <button class="btn btn-primary">Roll check</button>
+                                        </td>
+
+                                        </tr>
+                                        <td>STR</td>
+                                        <td>10</td>
+                                        <td>+0</td>
+                                        <td>
+                                            <button class="btn btn-primary">Roll check</button>
+                                        </td>
+
+                                        </tr>
+                                        <td>WIS</td>
+                                        <td>10</td>
+                                        <td>+0</td>
+                                        <td>
+                                            <button class="btn btn-primary">Roll check</button>
+                                        </td>
+
+                                        </tr>
+                                    </tbody>
+
+
+                                </table>
                             </div>
                         </div>
                     </div>
 
+                    <!-- General stats-->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingStats">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseStats" aria-expanded="false" aria-controls="collapseStats">
+                                Stats
+                            </button>
+                        </h2>
+                        <div id="collapseStats" class="accordion-collapse collapse" aria-labelledby="headingStats"
+                            data-bs-parent="#characterInfo">
+                            <div class="accordion-body">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>
+                                                Stat
+                                            </th>
+                                            <th>
+                                                Value
+                                            </th>
+                                            <th>Action</th>
+                                            </th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Armour class</td>
+                                            <td>14</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Initiative</td>
+                                            <td>+3</td>
+                                            <td>
+                                                <button class="btn btn-primary">Roll initiative</button>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td>Proficiency bonus</td>
+                                            <td>+2</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Speed</td>
+                                            <td>30 ft (walking)</td>
+                                            <td>N/A</td>
+                                        </tr>
+                                    </tbody>
+
+
+
+
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Weapons -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingWeapons">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseWeapons" aria-expanded="false" aria-controls="collapseWeapons">
+                                Weapons and armour
+                            </button>
+                        </h2>
+                        <div id="collapseWeapons" class="accordion-collapse collapse" aria-labelledby="headingWeapons"
+                            data-bs-parent="#characterInfo">
+                            <div class="accordion-body">
+                                <h2 class="mt-3 mb-3">Armour</h2>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Armour</th>
+                                            <th>AC</th>
+                                            <th>STR</th>
+                                            <th>Stealth</th>
+                                            <th>Weight</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Scale mail</td>
+                                            <td>14+DEX mod (max 2)</td>
+                                            <td>N/A</td>
+                                            <td>Disadv.</td>
+                                            <td>45lb</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Shield</td>
+                                            <td>+2</td>
+                                            <td>N/A</td>
+                                            <td>N/A</td>
+                                            <td>6lb</td>
+                                        </tr>
+                                    </tbody>
+
+                                </table>
+
+
+                                <h2 class="mt-3 mb-3">Weapons</h2>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Weapon</th>
+                                            <th>Damage</th>
+                                            <th>Weight</th>
+                                            <th>Properties</th>
+                                            <th>Action</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Mace</td>
+                                            <td>2d6 bludgeoning</td>
+                                            <td>4lb</td>
+                                            <td>N/A</td>
+                                            <th>
+                                                <button type="button" class="btn btn-primary">Attack</button>
+                                            </th>
+                                        </tr>
+                                        <tr>
+                                            <td>Crossbow, light</td>
+                                            <td>1d8 piercing</td>
+                                            <td>5lb</td>
+                                            <td>
+                                                <ul class="list-unstyled">
+                                                    <li>Ammo (range 80/320)</li>
+                                                    <li>loading</li>
+                                                    <li>two-handed</li>
+
+                                                </ul>
+                                            </td>
+                                            <th>
+                                                <button type="button" class="btn btn-primary">Attack</button>
+                                            </th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+
+
+
+
+
+
+
+
+
+
+
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <!-- Inventory -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingInventory">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseInventory" aria-expanded="false"
+                                aria-controls="collapseInventory">
+                                Inventory
+                            </button>
+                        </h2>
+                        <div id="collapseInventory" class="accordion-collapse collapse"
+                            aria-labelledby="headingInventory" data-bs-parent="#characterInfo">
+                            <div class="accordion-body">
+                                Inventory info goes here
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
