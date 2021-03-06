@@ -18,7 +18,7 @@
 
         <nav class="navbar navbar-expand-lg navbar-light bg-light">
             <div class="container-fluid">
-                <a class="navbar-brand" href="#">DandD</a>
+                <a class="navbar-brand" href="#">Character sheet</a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                     data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
                     aria-expanded="false" aria-label="Toggle navigation">
@@ -40,9 +40,11 @@
         <div class="row">
             <div class="col-md-3" id="sidebar">
                 <ul>
-                    <li>Character 1</li>
-                    <li>Character 2</li>
-                    <li>Character 3</li>
+                    <li>Overview</li>
+                    <li>Manage Character</li>
+                    <li>Manage Inventory</li>
+                    <li>Manage Spells</li>
+
 
                 </ul>
             </div>
@@ -188,17 +190,20 @@
                         </div>
                     </div>
 
-                    <!-- Weapons -->
+                    <!-- Inventory -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingWeapons">
+                        <h2 class="accordion-header" id="headingInventory">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseWeapons" aria-expanded="false" aria-controls="collapseWeapons">
-                                Weapons and armour
+                                data-bs-target="#collapseInventory" aria-expanded="false"
+                                aria-controls="collapseInventory">
+                                Inventory
                             </button>
                         </h2>
-                        <div id="collapseWeapons" class="accordion-collapse collapse" aria-labelledby="headingWeapons"
-                            data-bs-parent="#characterInfo">
+                        <div id="collapseInventory" class="accordion-collapse collapse"
+                            aria-labelledby="headingInventory" data-bs-parent="#characterInfo">
                             <div class="accordion-body">
+
+                                <!-- Armour -->
                                 <h2 class="mt-3 mb-3">Armour</h2>
                                 <table class="table table-striped">
                                     <thead>
@@ -229,7 +234,7 @@
 
                                 </table>
 
-
+                                <!-- Weapons -->
                                 <h2 class="mt-3 mb-3">Weapons</h2>
                                 <table class="table table-striped">
                                     <thead>
@@ -247,9 +252,9 @@
                                             <td>2d6 bludgeoning</td>
                                             <td>4lb</td>
                                             <td>N/A</td>
-                                            <th>
+                                            <td>
                                                 <button type="button" class="btn btn-primary">Attack</button>
-                                            </th>
+                                            </td>
                                         </tr>
                                         <tr>
                                             <td>Crossbow, light</td>
@@ -263,42 +268,80 @@
 
                                                 </ul>
                                             </td>
-                                            <th>
+                                            <td>
                                                 <button type="button" class="btn btn-primary">Attack</button>
-                                            </th>
+                                            </td>
                                         </tr>
                                     </tbody>
                                 </table>
 
 
+                                <!-- Equipment-->
+                                <h2 class="mt-3 mb-3">Equipment</h2>
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th>Item</th>
+                                            <th>Weight</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td>Backpack</td>
+                                            <td>5lb</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Carpenter's tools</td>
+                                            <td>6lb</td>
+                                        </tr>
+                                        <tr>
+                                            <td>Bedroll</td>
+                                            <td>7lb</td>
+                                        </tr>
 
-
-
-
-
-
-
-
-
+                                    </tbody>
+                                </table>
 
                             </div>
                         </div>
                     </div>
 
-
-                    <!-- Inventory -->
+                    <!-- Money -->
                     <div class="accordion-item">
-                        <h2 class="accordion-header" id="headingInventory">
+                        <h2 class="accordion-header" id="headingMoney">
                             <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseInventory" aria-expanded="false"
-                                aria-controls="collapseInventory">
-                                Inventory
+                                data-bs-target="#collapseMoney" aria-expanded="false" aria-controls="collapseMoney">
+                                Money
                             </button>
                         </h2>
-                        <div id="collapseInventory" class="accordion-collapse collapse"
-                            aria-labelledby="headingInventory" data-bs-parent="#characterInfo">
+                        <div id="collapseMoney" class="accordion-collapse collapse" aria-labelledby="headingMoney"
+                            data-bs-parent="#characterInfo">
                             <div class="accordion-body">
-                                Inventory info goes here
+                                <h2 class="mt-3 mb-3">Money</h2>
+
+                                <ul class="list-unstyled">
+                                    <li>Gold pieces: 25</li>
+                                    <li>Silver pieces: 25</li>
+                                    <li>Electrum pieces: 25</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Spells -->
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingSpells">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseSpells" aria-expanded="false" aria-controls="collapseSpells">
+                                Spells
+                            </button>
+                        </h2>
+                        <div id="collapseSpells" class="accordion-collapse collapse" aria-labelledby="headingSpells"
+                            data-bs-parent="#characterInfo">
+                            <div class="accordion-body">
+                                <h2 class="mt-3 mb-3">Spells</h2>
+
+                                NOT YET IMPLEMENTED
                             </div>
                         </div>
                     </div>
